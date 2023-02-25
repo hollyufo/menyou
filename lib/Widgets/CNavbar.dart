@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class CNavbar extends StatelessWidget {
     final IconData leftIcon;
@@ -27,7 +25,7 @@ class CNavbar extends StatelessWidget {
           GestureDetector(
             onTap: leftCallback != null ? () => leftCallback! () : null,
             child: Container(
-            padding: const EdgeInsets.fromLTRB(16, 8, 8, 8), 
+            padding: const EdgeInsets.fromLTRB(8, 8, 8, 8), 
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),

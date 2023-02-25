@@ -14,11 +14,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: kBackgroundColor,
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          CNavbar(Icons.arrow_back_ios_new_outlined, Icons.search_outlined)
-        ],
+      // getting the navbar from the widgets folder as a top navigation bar
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(60),
+        child: CNavbar(Icons.home, Icons.search),
+      ),
+      body: Center(
+        child: Text('Home Page'),
       ),
     );
   }
