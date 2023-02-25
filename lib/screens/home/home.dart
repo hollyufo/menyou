@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:menyou/constants/colors.dart';
 
 import '../../Widgets/CNavbar.dart';
+import '../../Widgets/MyBottomNavBar.dart';
 
 class HomePage extends StatefulWidget {
 
@@ -22,6 +23,7 @@ class _HomePageState extends State<HomePage> {
       body: Center(
         child: Text('Home Page'),
       ),
+      bottomNavigationBar: MyBottomNavBar(),
     );
   }
 }
