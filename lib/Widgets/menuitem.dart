@@ -16,6 +16,9 @@ class MenuItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16.0),
+      ), 
       elevation: 4.0,
       margin: EdgeInsets.all(8.0),
       child: Column(

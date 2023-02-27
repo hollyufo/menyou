@@ -14,6 +14,27 @@ class _MyBottomNavBarState extends State<MyBottomNavBar> {
     setState(() {
       _selectedIndex = index;
     });
+
+    // Navigate to the corresponding page
+    switch (_selectedIndex) {
+      case 0:
+        Navigator.pushNamed(context, '/home');
+        break;
+      case 1:
+        Navigator.pushNamed(context, '/menu');
+        break;
+      case 2:
+        Navigator.pushNamed(context, '/favorites');
+        break;
+      case 3:
+        Navigator.pushNamed(context, '/cart');
+        break;
+      case 4:
+        Navigator.pushNamed(context, '/profile');
+        break;
+      default:
+        break;
+    }
   }
 
   @override
@@ -25,6 +46,8 @@ class _MyBottomNavBarState extends State<MyBottomNavBar> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
+            // when you click on the home icon it will take you to the home page
+
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search),

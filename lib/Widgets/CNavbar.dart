@@ -15,7 +15,7 @@ class CNavbar extends StatelessWidget {
     
     return Container(
       // seeting the background color of the navbar
-      color: Colors.white,
+      color: Color.fromARGB(255, 222, 151, 37),
       padding: EdgeInsets.fromLTRB(20, 50, 20, 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
