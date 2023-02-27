@@ -14,11 +14,9 @@ class CNavbar extends StatelessWidget {
 
     
     return Container(
-      padding: EdgeInsets.only(
-        top: MediaQuery.of(context).padding.top,
-        left: 25,
-        right: 25,
-      ),
+      // seeting the background color of the navbar
+      color: Colors.grey[900],
+      padding: EdgeInsets.fromLTRB(20, 50, 20, 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
