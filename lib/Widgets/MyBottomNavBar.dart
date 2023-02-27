@@ -19,7 +19,7 @@ class _MyBottomNavBarState extends State<MyBottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black, // Set the background color here
+      // Set the background color here
       child: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -45,6 +45,7 @@ class _MyBottomNavBarState extends State<MyBottomNavBar> {
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.purple,
+        unselectedItemColor: Colors.grey,
         onTap: _onItemTapped,
       ),
     );
